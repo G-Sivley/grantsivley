@@ -14,7 +14,7 @@ content %}
     software developer
   </p>
 
-  <div class="container hor-pad">
+  <div class="container hor-pad dashed-top">
     <h1 class="display-4 centered horizontal-space">Med Buddy</h1>
 
     <div class="row">
@@ -139,6 +139,49 @@ content %}
       </button>
     </a>
   </div>
+
+  <div class="container hor-pad dashed-top">
+    <h1 class="display-4 centered horizontal-space">This Website</h1>
+
+    <div class="row">
+      <div class="col-md left-project">
+        <p class="proj-subtitle">Description</p>
+        <p>
+          This was initially a way for me to show off my projects.
+          I have learned to appreciate the complexities of creating, hosting, and running a website.
+          Through this experience, I have had to learn multiple technologies that I was not comfortable with in the past.
+        </p>
+
+        <p class="proj-subtitle">Technologies I Used</p>
+        <p>
+          <strong>HTML/CSS/JavaScript</strong> - I had to learn the main "languages" for creating websites to complete this project.
+          <br />
+          <strong>Flask and Jinja2</strong> - Using Python, I have learned the basic GET/POST requests, using a basic backend server. Also, I have also learned to create efficent code with Jinja2. This allows me to reuse HTML snippets all over the website.
+          <br />
+          <strong>Heroku</strong> - This is my first time using a server for dynamic websites. I learned how to deploy a website with heroku with no charge to me (besides the domain name).
+          <br>
+          <strong>Ajax and Mailgun</strong> - Using Ajax provided by jquery, I learned how to use async JS POST methods to send emails to myself without refreshing the page.
+        </p>
+      </div>
+
+      <div class="col-md">
+        <a href="https://github.com/G-Sivley/grantsivley">
+          <img
+            class="proj-img"
+            src="{{ url_for('static', filename='images/WebsiteScreenshot.png') }}"
+            alt="Image of Website"
+          />
+        </a>
+      </div>
+    </div>
+
+    <a href="https://github.com/G-Sivley/grantsivley">
+      <button type="button" class="btn btn-light btn-lg horizontal-space">
+        Website GitHub
+      </button>
+    </a>
+  </div>
+
 </section>
 
 {% endblock %}
