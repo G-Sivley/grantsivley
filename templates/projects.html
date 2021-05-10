@@ -1,0 +1,144 @@
+{% extends 'base.html' %} {% block title %}Projects{% endblock %} {% block
+content %}
+
+<section
+  class="green-border container rounded"
+  style="margin-top: 75px; margin-bottom: 50px"
+>
+  <!--Project box setup-->
+  <h1 class="display-2">My Projects</h1>
+  <p class="lead" style="padding: 25px 50px">
+    Projects are essential for learning as self taught software developer.
+    <br />
+    Here are some projects that I have worked on throughout my journey as a
+    software developer
+  </p>
+
+  <div class="container hor-pad">
+    <h1 class="display-4 centered horizontal-space">Med Buddy</h1>
+
+    <div class="row">
+      <div class="col-md left-project">
+        <p class="proj-subtitle">Description</p>
+        <p>
+          Med Buddy is an iOS application with the goal of making medication
+          adherence a part of life. It is an application with the ability to
+          save your daily medications, schedule alerts, and share your
+          medications with your providers.
+        </p>
+
+        <p class="proj-subtitle">Technologies I Used</p>
+        <p>
+          <strong>Firebase</strong> - To save consumers medication information
+          for presentation within the app
+          <br />
+          <strong>Xcode/Swift</strong> - The IDE and language used for iOS
+          applications. I worked on my skill with storyboards/iOS UI, delegate
+          methods, and the MVC model.
+          <br />
+          <strong>Calendar and Image Picker</strong> - I learned how to create a
+          satisfing UI with a calendar attached to the backend with Firebase.
+        </p>
+      </div>
+
+      <div class="col-md">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide carousel-size"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://github.com/G-Sivley/Med-Buddy">
+                <img
+                  class="center-block w-50"
+                  src="{{ url_for('static', filename='images/MedBuddyHome.jpg') }}"
+                  alt="First slide"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://github.com/G-Sivley/Med-Buddy">
+                <img
+                  class="center-block w-50"
+                  src="{{ url_for('static', filename='images/MedBuddyAddMed.jpg') }}"
+                  alt="Second slide"
+                />
+              </a>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://github.com/G-Sivley/Med-Buddy">
+      <button type="button" class="btn btn-light btn-lg horizontal-space">
+        Med Buddy GitHub
+      </button>
+    </a>
+  </div>
+
+  <div class="container hor-pad dashed-top">
+    <h1 class="display-4 centered horizontal-space">Stock Screener</h1>
+
+    <div class="row">
+      <div class="col-md">
+        <a href="https://github.com/G-Sivley/stockScreener">
+          <img
+            class="proj-img"
+            src="{{ url_for('static', filename='images/StockScreener.jpg') }}"
+            alt="Image of Stock Screener Code"
+          />
+        </a>
+      </div>
+      <div class="col-md left-project">
+        <p class="proj-subtitle">Description</p>
+        <p>
+          StockScreener is a Python application that uses Selenium,
+          BeautifulSoup, time, requests, and webbrowser to open multiple pages
+          of information regarding stock tickers that return on my Stock filter.
+          It opens as many pages as the user requests in one click. This has
+          saved time for me allowing me to research each stock with ease.
+        </p>
+
+        <p class="proj-subtitle">Technologies I Used</p>
+        <p>
+          <strong>Selenium</strong> - I have learned how to use Selenium to
+          search HTML on a page and pull multiple links from a page.
+          <br />
+          <strong>BeautifulSoup</strong> - Parse HTML to find the correct values
+          and apply them to a variable that can be used with webbrowser.
+          <br />
+          <strong>VIM</strong> - This is my first time using VIM and it has
+          significantly improved my coding speed.
+        </p>
+      </div>
+    </div>
+
+    <a href="https://github.com/G-Sivley/stockScreener">
+      <button type="button" class="btn btn-light btn-lg horizontal-space">
+        Stock Screener GitHub
+      </button>
+    </a>
+  </div>
+</section>
+
+{% endblock %}

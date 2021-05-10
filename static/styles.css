@@ -1,0 +1,227 @@
+/* Global Functions */
+
+html {
+    font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+body {
+    background-color: rgb(37, 44, 44);
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+div {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    width: 100%;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container {
+    width: auto;
+    max-width: 85%;
+    padding: 0 15px;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: rgb(153, 152, 152)
+}
+
+.hero-image {
+    background-image: url("/static/images/LandingBackground.jpg");
+    background-color: #cccccc;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; 
+    margin-bottom: 30px;
+  }
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+    font-size: 4vw;
+    letter-spacing: 10px;
+}
+
+.important {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 25px;
+    background-color: #99ff99;
+    color: #000;
+    font-size: 20px
+}
+
+.important a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.green {
+    background-color: #99ff99;
+    color:black
+}
+
+.skills {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    color: white;
+    
+}
+
+.skills ul { 
+    display:inline-table;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.skills li {
+    list-style-type: none;
+    
+    margin: 0 10px;
+    
+    padding: 5px;
+}
+
+.green-border {
+    border-color: #99ff99;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.content-middle {
+    border-left: 1px dashed #99ff99;
+    border-right: 1px dashed #99ff99;
+}
+
+/*Projects page*/
+.project {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.horizontal-space {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.hor-pad {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.proj-subtitle {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.left-project {
+    display: block;
+    text-align: left;
+}
+
+.right-project {
+    text-align: right;
+}
+
+.carousel {
+    margin: 0 auto;
+}
+
+.carousel-size {
+    width: 70%;
+}
+
+.proj-img {
+    max-width: 100%;
+    padding: 5 10;
+}
+
+.dashed-top {
+    border-top: 1px dashed #99ff99; 
+}
+
+input[type=text], 
+input[type=email], 
+input[type=text]:focus, 
+input[type=email]:focus, 
+#text-message {
+
+    color: white;
+    resize: none;
+    outline: none !important;
+    box-shadow: none;
+}
+
+
+input[type=text]:focus, 
+input[type=email]:focus,
+#text-message:focus {
+    border: 0;
+}
+
+.swal-overlay {
+    background-color: rgba(153, 255, 153, 0.45);
+}
+
+.swal-modal {
+    background-color: rgb(37, 44, 44);
+}
+
+.swal-title {
+    color: white;
+}
+
+.swal-text {
+    color: white;
+}
+
+.swal-button {
+    color: black;
+    background-color: #99ff99;
+}
+
+.swal-icon--success__hide-corners {
+    background-color: unset;
+}
+
+.swal-icon--success:after, .swal-icon--success:before {
+    background: unset;
+}
+
