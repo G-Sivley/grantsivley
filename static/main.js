@@ -18,30 +18,12 @@ function typeWriter() {
   }
 }
 
-function validateEmail(email) 
-    {
-        var re = /\S+@\S+\.\S+/;
-        return re.test(email);
-    }
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
 
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Fuction to do typerwriter text for my name after img load
-  typeWriter()
-
-  // Functions to check the input forms and make them incorrect if it is an error
-  const name = document.getElementById('name'); 
-  name.addEventListener('focusout', function() {
-    if (!name.value) {
-      name.style.borderColor="red";
-    }
-    else {
-      name.style.borderColor="#99ff99";
-    }
-  });
-
-  const email = document.getElementById('email');
+function emailFocusOut(email_field) {
   email.addEventListener('focusout', function() {
     const isValid = validateEmail(email.value)
     if (!isValid) {
@@ -52,15 +34,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  const text_message = document.getElementById('text-message');
-  text_message.addEventListener('focusout', function() {
-    if (!text_message.value) {
-      text_message.style.borderColor='red';
+}
+
+function textFieldIsEmpty(element) {
+  element.addEventListener('focusout', function() {
+    if (!element.value) {
+      element.style.borderColor="red";
     }
     else {
-      text_message.style.borderColor='#99ff99'
+      element.style.borderColor="#99ff99";
     }
   });
+
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Fuction to do typerwriter text for my name after img load
+  typeWriter()
+
+  // Functions to check the input forms and make them incorrect if it is an error
+  const name = document.getElementById('name'); 
+  textFieldIsEmpty(name);
+
+  const email = document.getElementById('email');
+  emailFocusOut(email);
+
+  const text_message = document.getElementById('text-message');
+  textFieldIsEmpty(text_message);
 
   const send_button = document.getElementById('send_message');
   var submitted = false;
